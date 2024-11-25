@@ -128,7 +128,7 @@ export const useOrder = () => {
       const response = await fetcher.get(
         `/restorex/orders/getCustomersBySeller`
       );
-      console.log(response.data.customers);
+      console.log(response.data?.customers);
       return response.data.customers;
     } catch (err) {
       handleError(err);

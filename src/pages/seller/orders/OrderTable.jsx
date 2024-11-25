@@ -29,8 +29,8 @@ const OrderTable = ({ orders, loading, cancelOrder, handleOrderAction }) => (
     <TableHeader>
       <TableRow>
         <TableHead className="w-[120px]">Order ID</TableHead>
-        <TableHead className="w-[200px]">Customer Name</TableHead>
-        <TableHead className="w-[200px]">Products</TableHead>
+        <TableHead className="w-[200px]">Product</TableHead>
+        <TableHead className="w-[200px]">Discription</TableHead>
         <TableHead className="w-[300px]">Shipping Address</TableHead>
         <TableHead className="w-[150px]">Payment Method</TableHead>
         <TableHead className="w-[150px]">Total Amount</TableHead>
@@ -71,7 +71,7 @@ const OrderTable = ({ orders, loading, cancelOrder, handleOrderAction }) => (
               <TableCell>{orderItem._id}</TableCell>
 
               {/* User Name */}
-              <TableCell>{orderItem.userId.name}</TableCell>
+              <TableCell>{orderItem?.products[0]?.title.slice(0, 20)}</TableCell>
 
               {/* Products */}
               <TableCell>

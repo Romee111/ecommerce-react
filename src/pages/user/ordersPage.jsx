@@ -75,7 +75,7 @@ const OrdersPage = () => {
                 <TableCell>{orderItem._id}</TableCell>
 
                 {/* User Name */}
-                <TableCell>{orderItem.userId.name}</TableCell>
+                <TableCell>{orderItem.name}</TableCell>
 
                 {/* Products */}
                 <TableCell>

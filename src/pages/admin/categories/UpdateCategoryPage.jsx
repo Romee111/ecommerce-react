@@ -157,7 +157,7 @@ const UpdateCategoryPage = () => {
               <div>
                 <Button
                   type="submit"
-                  className="w-full mt-4"
+                  className="w-50 mt-4"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Updating..." : "Update Category"}
